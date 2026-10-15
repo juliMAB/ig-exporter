@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>IG Exporter</title>
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 620px; margin: 40px auto; padding: 0 20px; color: #222; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; }
+  ol { padding-left: 22px; }
+  .note { background: #fff8e1; border-left: 4px solid #f0ad4e; padding: 10px 14px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>IG Exporter</h1>
+  <p>Esta extension guarda publicaciones de Instagram <strong>de forma local</strong>. Es <strong>100% pasiva</strong>: no usa la API de Instagram, no hace consultas GraphQL, no manda nada a ningun servidor y no envia tu sesion a ningun lado.</p>
+
+  <h2>Como funciona</h2>
+  <ul>
+    <li>Es <strong>100% pasiva</strong>: no hace <strong>ningun</strong> pedido a Instagram. Ni a su API, ni a GraphQL, ni siquiera abre la URL del post.</li>
+    <li>Solo lee lo que la pagina <strong>ya tiene cargado</strong> en pantalla.</li>
+    <li>Todo se guarda en tu disco, dentro de la carpeta <code>ig-exporter/</code> de tus descargas.</li>
+  </ul>
+
+  <h2>Como usar</h2>
+  <ol>
+    <li>Abre Instagram en una pestaña y navega a la publicacion que querés guardar (o a la coleccion / Guardados).</li>
+    <li>Espera a que la pagina cargue del todo. En una coleccion, <strong>scrollea la grilla</strong> para cargar mas publicaciones.</li>
+    <li>Hace clic en el icono de <strong>IG Exporter</strong> en la barra de herramientas.</li>
+    <li>Aparece un panel abajo a la derecha de la pagina.</li>
+    <li>Presiona <strong>Guardar esta publicacion</strong> o <strong>Extraer lo que hay en pantalla</strong>.</li>
+  </ol>
+
+  <h2>Que guarda</h2>
+  <ul>
+    <li><strong>Datos:</strong> autor, texto, fecha, likes, comentarios, ubicacion y las URLs de los medios. Siempre.</li>
+    <li><strong>Medios:</strong> las imagenes y videos, solo si tildás la opcion.</li>
+  </ul>
+
+  <div class="note">
+    <p><strong>Nota:</strong> para abrir este panel tenés que estar en una pestaña de <code>instagram.com</code>. Volvé a Instagram y hacé clic de nuevo en el icono.</p>
+  </div>
+</body>
+</html>

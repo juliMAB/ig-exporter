@@ -1,0 +1,15 @@
+{
+  "name": "ig-exporter",
+  "version": "1.1.0",
+  "description": "Extension (Opera GX / Chrome MV3) que guarda publicaciones de Instagram (datos + medios) en local. 100% pasiva, sin API.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/juliMAB/ig-exporter.git" },
+  "type": "commonjs",
+  "scripts": {
+    "test": "node tests/parse.test.js && node tests/naming.test.js",
+    "test:e2e": "node tests/e2e.test.js && node tests/e2e-collection.test.js"
+  },
+  "dependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}
